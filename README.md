@@ -1,7 +1,7 @@
 About alteryx-open-src-update-checker
 =====================================
 
-Home: https://github.com/FeatureLabs/alteryx-open-src-update-checker/
+Home: https://github.com/alteryx/alteryx-open-src-update-checker/
 
 Package license: BSD-3-Clause
 
