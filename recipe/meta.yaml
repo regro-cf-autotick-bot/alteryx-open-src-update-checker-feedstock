@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   script_env:
     - ALTERYX_OPEN_SRC_UPDATE_CHECKER=False
@@ -40,7 +40,7 @@ test:
     - pytest alteryx_open_src_update_checker/tests
 
 about:
-  home: https://github.com/FeatureLabs/alteryx-open-src-update-checker/
+  home: https://github.com/alteryx/alteryx-open-src-update-checker/
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
