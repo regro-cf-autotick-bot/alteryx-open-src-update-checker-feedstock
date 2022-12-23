@@ -1,5 +1,5 @@
 {% set name = "alteryx-open-src-update-checker" %}
-{% set version = "2.1.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 814003ab6952c406263643ea6dc9d37049ba2d53bab91775d383ebb08e39c894
+  sha256: 36b67459a822d695dfe9f41bfdd73bf28425d89b0e146f66e2c0bb6e52466f62
 
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
   script_env:
     - ALTERYX_OPEN_SRC_UPDATE_CHECKER=False
 
@@ -44,7 +44,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'an update checker for alteryx open source libraries'
+  summary: an update checker for alteryx open source libraries
 
 extra:
   recipe-maintainers:
