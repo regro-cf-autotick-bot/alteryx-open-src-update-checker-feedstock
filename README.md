@@ -1,11 +1,11 @@
-About alteryx-open-src-update-checker
-=====================================
+About alteryx-open-src-update-checker-feedstock
+===============================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/alteryx-open-src-update-checker-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/alteryx/alteryx-open-src-update-checker/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/alteryx-open-src-update-checker-feedstock/blob/main/LICENSE.txt)
 
 Summary: an update checker for alteryx open source libraries
 
