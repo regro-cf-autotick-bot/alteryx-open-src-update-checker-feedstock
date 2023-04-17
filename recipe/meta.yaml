@@ -1,5 +1,5 @@
 {% set name = "alteryx-open-src-update-checker" %}
-{% set version = "3.0.1" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 36b67459a822d695dfe9f41bfdd73bf28425d89b0e146f66e2c0bb6e52466f62
+  sha256: cd7eae3c6d92033b4d9c6193f1deb25b4fd27fc02deebc90a1acb8f6bf2d2ba6
 
 
 build:
