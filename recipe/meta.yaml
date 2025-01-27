@@ -6,23 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: cd7eae3c6d92033b4d9c6193f1deb25b4fd27fc02deebc90a1acb8f6bf2d2ba6
 
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   script_env:
     - ALTERYX_OPEN_SRC_UPDATE_CHECKER=False
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - requests >=2.22.0
 test:
   imports:
@@ -34,6 +34,7 @@ test:
     - evalml ==0.14.1
     - woodwork ==0.0.11
     - mock >=3.0.5
+    - python {{ python_min }}
   source_files:
     - alteryx_open_src_update_checker/tests/*
   commands:
